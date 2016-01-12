@@ -1,0 +1,35 @@
+{
+  "Opc" : {
+    "OpcRestServerUrl" : "http://127.0.0.1:5000/opc",
+    "OpcService" : {
+      "Name" : "OPCServiceName.1",
+      "Values" : [
+        "value1",
+        "value2",
+        "value3",
+        "value4",
+        "value5",
+        "value6",
+        "value7",
+        "value8"
+      ]
+    }
+  },
+
+  "Connectors" : [
+    {
+      "Name" : "MongoDb",
+      "Type" : "MongoDb",
+      "Host" : "127.0.0.1:27017",
+      "Database" : "opc_sevice",
+      "Collection" : "measurements"
+    },
+    {
+      "Name" : "ElasticSearch",
+      "Type" : "ElasticSearch",
+      "Url" : "http://127.0.0.1:9200",
+      "DbType" : "measurements",
+      "IndexName" : "opc_service"
+    }
+  ]
+}
