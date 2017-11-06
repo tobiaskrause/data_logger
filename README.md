@@ -2,6 +2,7 @@ Instructions
 ============
 Small application to read opc values from a rest service (not included) and write
 the values to Mongodb and ElasicSearch instances
+
 How to build
 ============
 Build the application with:
